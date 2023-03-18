@@ -55,8 +55,8 @@ const Main = ({ isAuth, setisAuth }) => {
 
     return (
         <div
-            style={{ overflow: isArtist() ? "hidden" : "flex" }}
-            className={`${!isAuth ? "w-full h-[100vh]" : ""
+            style={{ overflow: isArtist() || !isAuth ? "hidden" : "auto" }}
+            className={`${!isAuth ? "w-full h-full" : ""
                 } relative flex justify-center items-center`}
         >
             {!isAuth && showLines ? <BeforeAuth /> : <></>}

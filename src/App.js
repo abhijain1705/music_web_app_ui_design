@@ -8,7 +8,7 @@ function App() {
   const [isAuth, setisAuth] = useState(false);
 
   return (
-    <div className="App">
+    <div className={`App ${!isAuth ? "overflow-y-hidden" : ""}`}>
       <Navbar isAuth={isAuth} />
       <Main setisAuth={setisAuth} isAuth={isAuth} />
     </div>

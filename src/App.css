@@ -6,7 +6,6 @@
 .App {
     width: 100vw;
     overflow-x: hidden;
-    /* overflow-y: scroll; */
     height: 100vh;
     background-color: #EDDADA;
     position: relative;
